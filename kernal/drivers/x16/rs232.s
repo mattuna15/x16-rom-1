@@ -56,15 +56,15 @@ bso232:
 ;BASIN
 ;
 bsi232:
- 	lda #1
- 	bit $9fc0
- 	bne :+
- 	lda #8 ; EMPTY
- 	sta status
- 	lda #0
- 	rts
+;	lda #1
+; 	bit $9fc0
+; 	bne :+
+; 	lda #8 ; EMPTY
+; 	sta status
+; 	lda #0
+; 	rts
 
- :	lda #0 ; OK
- 	sta status
- 	lda $9fc0
+:	lda #0 ; OK
+	sta status
+	lda $9fc0
 	rts
